@@ -1,6 +1,6 @@
-package commands;
+package com.smarthome.commands;
 
-import appliances.Appliance;
+import com.smarthome.appliance.Appliance;
 
 public class TurnOffCommand implements Command {
     private final Appliance appliance;

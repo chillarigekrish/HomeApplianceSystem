@@ -1,5 +1,8 @@
-package appliances;
+package com.smarthome.appliance;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Fan implements Appliance {
     private int speed = 0; // 0 = off, 1 = low, 2 = high
 

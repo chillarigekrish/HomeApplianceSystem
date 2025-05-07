@@ -1,5 +1,4 @@
-import appliances.Light;
-import enums.Switch;
+import com.smarthome.appliance.Light;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

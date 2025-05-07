@@ -1,7 +1,9 @@
-package appliances;
+package com.smarthome.appliance;
 
-import enums.Switch;
+import com.smarthome.enums.Switch;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Light implements Appliance {
     private String lightStatus = Switch.OFF.toString();
 
