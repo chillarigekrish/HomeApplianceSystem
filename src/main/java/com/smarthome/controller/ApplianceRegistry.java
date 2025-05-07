@@ -15,11 +15,19 @@ public class ApplianceRegistry {
         appliances.add(appliance);
     }
 
-    public List<String> getStatus() {
+    public List<String> getStatus() throws Exception {
+        if (appliances.isEmpty()) {
+            //can be a customized exception
+            throw new Exception("No Appliance initialized");
+        }
         return appliances.stream().map(Appliance::getStatus).toList();
     }
 
-    public void turnOffAll() {
+    public void turnOffAll() throws Exception {
+        if (appliances.isEmpty()) {
+            //can be a customized exception
+            throw new Exception("No Appliance initialized");
+        }
         appliances.forEach(Appliance::turnOff);
     }
 }

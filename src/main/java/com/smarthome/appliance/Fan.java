@@ -5,15 +5,18 @@ import org.springframework.stereotype.Component;
 @Component
 public class Fan implements Appliance {
     private int speed = 0; // 0 = off, 1 = low, 2 = high
+    private boolean isOn = false;
 
     @Override
     public void turnOn() {
         setSpeed(1);
+        isOn = true;
     }
 
     @Override
     public void turnOff() {
         setSpeed(0);
+        isOn = false;
     }
 
     public void setSpeed(int newSpeed) {
@@ -32,5 +35,13 @@ public class Fan implements Appliance {
     @Override
     public String getStatus() {
         return "Fan speed: " + speed;
+    }
+
+    public boolean isOn() {
+        return isOn;
+    }
+
+    public void setOn(boolean on) {
+        isOn = on;
     }
 }
