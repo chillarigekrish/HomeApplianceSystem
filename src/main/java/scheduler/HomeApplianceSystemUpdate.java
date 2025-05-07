@@ -14,11 +14,11 @@ public class HomeApplianceSystemUpdate {
     }
 
     @Scheduled(cron = "0 0 1 1 1 *") // Jan 1st, 1:00 AM
-    public void performSystemUpdate() {
+    public void performSystemUpdate() throws Exception {
         runSystemUpdateLogic();
     }
 
-    public void runSystemUpdateLogic() {
+    public void runSystemUpdateLogic() throws Exception {
         System.out.println("System update in progress: turning off all appliances...");
         registry.turnOffAll();
         System.out.println("Update completed.");

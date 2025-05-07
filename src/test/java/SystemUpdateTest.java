@@ -7,7 +7,7 @@ import static org.mockito.Mockito.*;
 class HomeApplianceSystemUpdateTest {
 
     @Test
-    void testSystemUpdateTurnsOffAllAppliances() {
+    void testSystemUpdateTurnsOffAllAppliances() throws Exception {
         ApplianceRegistry controller = mock(ApplianceRegistry.class);
         HomeApplianceSystemUpdate updateSystem = new HomeApplianceSystemUpdate(controller);
 
