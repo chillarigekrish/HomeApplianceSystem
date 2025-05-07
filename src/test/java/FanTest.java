@@ -1,4 +1,4 @@
-import appliances.Fan;
+import com.smarthome.appliance.Fan;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

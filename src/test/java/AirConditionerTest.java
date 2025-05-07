@@ -1,4 +1,4 @@
-import appliances.AirConditioner;
+import com.smarthome.appliance.AirConditioner;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
